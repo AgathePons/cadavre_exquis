@@ -1,0 +1,9 @@
+################################################################################
+# Fichier de test des routes HTTP de l'API
+# Nécessite l'extension REST Client pour VSCode
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+################################################################################
+@host = http://localhost:{{$dotenv PORT}}
+
+### GET /v1/cadex
+GET {{host}}/v1/cadex
