@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadavre exquis</title>
+</head>
+<body>
+    <header>
+        <span class="cadavre">Cadavre</span>
+        <span class="exquis">Exquis</span>
+    </header>
+    <main>
+        <div class="formOpen button">Formulaire</div>
+        <form>
+            <div class="formClose button">X</div>
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name">
+                <label for="adjective">Adjectif :</label>
+                <input type="text" id="adjective">
+            </div>
+            <div>
+                <label for="verb">Verbe :</label>
+                <input type="text" id="verb">
+                <label for="complement">Complément :</label>
+                <input type="text" id="complement">
+            </div>
+            <div>
+                <button class="button" id="valider">Valider</button>
+            </div>
+        </form>
+        <button class="button" id="again">Again !</button>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
