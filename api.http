@@ -7,3 +7,6 @@
 
 ### GET /v1/cadex
 GET {{host}}/v1/cadex
+
+### GET /v1/cadex?verb=allume%20le%20feu%20de
+GET {{host}}/v1/cadex?name=Le%20petit%20dodo&verb=crounche
