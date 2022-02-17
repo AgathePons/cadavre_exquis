@@ -1,3 +1,4 @@
+const {cadex} = require('../app/services/cadex');
 const controller = require('../app/controllers/controller');
 
 const mockResponse = {
@@ -5,6 +6,23 @@ const mockResponse = {
     return data; // on return pour l'utiliser, il faut répercuter cette modif dans la méthode
   }),
 };
+
+// 1ère façon, juste jestifier la méthode du module comme fait au-dessus
+// cadex.generate = jest.fn(cadex.generate);
+
+// 2ème
+jest.mock('../app/services/cadex', () => {
+  const originalModule = jest.requireActual('../app/services/cadex');
+  return {
+    ...originalModule,
+    cadex: {
+        ...originalModule.cadex,
+        generate: jest.fn(() => ({
+            glue: () => 'test',
+        })),
+    },
+};
+});
 
 let result;
 
@@ -22,6 +40,9 @@ describe('Get cadex', () => {
   */
   beforeAll(() => {
     result = controller.getCadex(null, mockResponse); // on met null à la place de la req car on en a pas besoin
+  });
+  it('should call cadex.generate', () => {
+
   });
   it('should call response.json', () => {
     expect(mockResponse.json).toHaveBeenCalled();

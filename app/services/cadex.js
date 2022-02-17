@@ -28,6 +28,17 @@ const cadex = {
       },
     };
   },
+  add(update) {
+    Object.keys(update).forEach((propName) => {
+      // check si la clé rentrée au singulier correspond à une clé de data au pluriel
+      if(data[`${propName}s`]) {
+        // check si la valeur n'est pas déjà présente
+        if(!data[`${propName}s`].includes[propName]) {
+          data[`${propName}s`].push(update[propName]);
+        }
+      }
+    });
+  },
 };
 
 // on export randomIndex pour pouvoir la require dans le fichier de test

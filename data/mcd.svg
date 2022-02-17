@@ -1,0 +1,160 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="559" height="468" view_box="0 0 559 468"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Thu, 17 Feb 2022 07:41:40</desc>
+
+<rect id="frame" x="0" y="0" width="559" height="468" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association DEBUTE -->
+<line x1="56" y1="45" x2="56" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="62.0" y="98" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="194" y1="225" x2="56" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="138.786902065" y="180" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-DEBUTE">
+	<path d="M 81 107 a 14 14 90 0 1 14 14 V 134 h -78 V 121 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 95 134.0 v 15 a 14 14 90 0 1 -14 14 H 31 a 14 14 90 0 1 -14 -14 V 134.0 H 78" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="17" y="107" width="78" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="17" y1="134" x2="95" y2="134" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="26" y="127.3" fill="#000000" font-family="Arial Black" font-size="13">DEBUTE</text>
+</g>
+
+<!-- Association CARACTERISE -->
+<line x1="194" y1="45" x2="194" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="200.0" y="98" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="194" y1="225" x2="194" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="200.0" y="180" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-CARACTERISE">
+	<path d="M 241 107 a 14 14 90 0 1 14 14 V 134 h -122 V 121 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 255 134.0 v 15 a 14 14 90 0 1 -14 14 H 147 a 14 14 90 0 1 -14 -14 V 134.0 H 122" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="133" y="107" width="122" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="133" y1="134" x2="255" y2="134" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="142" y="127.3" fill="#000000" font-family="Arial Black" font-size="13">CARACTERISE</text>
+</g>
+
+<!-- Association CORRIGE -->
+<line x1="194" y1="414" x2="194" y2="315" stroke="#bf812d" stroke-width="1.5"/>
+<text x="200.0" y="360" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<line x1="194" y1="225" x2="194" y2="315" stroke="#bf812d" stroke-width="1.5"/>
+<text x="200.0" y="278" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<g id="association-CORRIGE">
+	<path d="M 223 287 a 14 14 90 0 1 14 14 V 314 h -86 V 301 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 237 314.0 v 15 a 14 14 90 0 1 -14 14 H 165 a 14 14 90 0 1 -14 -14 V 314.0 H 86" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="151" y="287" width="86" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="151" y1="314" x2="237" y2="314" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="160" y="307.3" fill="#000000" font-family="Arial Black" font-size="13">CORRIGE</text>
+</g>
+
+<!-- Association COMPLETE -->
+<line x1="481" y1="45" x2="481" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="487.0" y="98" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="194" y1="225" x2="481" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="268" y="217.748244664" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-COMPLETE">
+	<path d="M 516 107 a 14 14 90 0 1 14 14 V 134 h -98 V 121 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 530 134.0 v 15 a 14 14 90 0 1 -14 14 H 446 a 14 14 90 0 1 -14 -14 V 134.0 H 98" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="432" y="107" width="98" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="432" y1="134" x2="530" y2="134" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="441" y="127.3" fill="#000000" font-family="Arial Black" font-size="13">COMPLETE</text>
+</g>
+
+<!-- Association ACTIONNE -->
+<line x1="336" y1="45" x2="336" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="342.0" y="98" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="194" y1="225" x2="336" y2="135" stroke="#bf812d" stroke-width="1.5"/>
+<text x="232.660687686" y="180" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-ACTIONNE">
+	<path d="M 370 107 a 14 14 90 0 1 14 14 V 134 h -96 V 121 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 384 134.0 v 15 a 14 14 90 0 1 -14 14 H 302 a 14 14 90 0 1 -14 -14 V 134.0 H 96" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="288" y="107" width="96" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="288" y1="134" x2="384" y2="134" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="297" y="127.3" fill="#000000" font-family="Arial Black" font-size="13">ACTIONNE</text>
+</g>
+
+<!-- Entity NAME -->
+<g id="entity-NAME">
+	<g id="frame-NAME">
+		<rect x="9" y="9" width="94" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="9" y="37.0" width="94" height="44" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="9" y="9" width="94" height="72" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="9" y1="37" x2="103" y2="37" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="34" y="29.3" fill="#000000" font-family="Arial Black" font-size="13">NAME</text>
+	<text x="17" y="53.2" fill="#000000" font-family="Arial" font-size="14">code_name</text>
+	<line x1="17" y1="56" x2="95" y2="56" stroke="#000000" stroke-width="1.2"/>
+	<text x="17" y="71.2" fill="#000000" font-family="Arial" font-size="14">text</text>
+</g>
+
+<!-- Entity COMPLEMENT -->
+<g id="entity-COMPLEMENT">
+	<g id="frame-COMPLEMENT">
+		<rect x="412" y="9" width="138" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="412" y="37.0" width="138" height="44" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="412" y="9" width="138" height="72" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="412" y1="37" x2="550" y2="37" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="429" y="29.3" fill="#000000" font-family="Arial Black" font-size="13">COMPLEMENT</text>
+	<text x="420" y="53.2" fill="#000000" font-family="Arial" font-size="14">code_complement</text>
+	<line x1="420" y1="56" x2="541" y2="56" stroke="#000000" stroke-width="1.2"/>
+	<text x="420" y="71.2" fill="#000000" font-family="Arial" font-size="14">text</text>
+</g>
+
+<!-- Entity COMPOSITION -->
+<g id="entity-COMPOSITION">
+	<g id="frame-COMPOSITION">
+		<rect x="126" y="189" width="136" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="126" y="217.0" width="136" height="44" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="126" y="189" width="136" height="72" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="126" y1="217" x2="262" y2="217" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="141" y="209.3" fill="#000000" font-family="Arial Black" font-size="13">COMPOSITION</text>
+	<text x="134" y="233.2" fill="#000000" font-family="Arial" font-size="14">code_composition</text>
+	<line x1="134" y1="236" x2="253" y2="236" stroke="#000000" stroke-width="1.2"/>
+	<text x="134" y="251.2" fill="#000000" font-family="Arial" font-size="14">phrase</text>
+</g>
+
+<!-- Entity ADJECTIVE -->
+<g id="entity-ADJECTIVE">
+	<g id="frame-ADJECTIVE">
+		<rect x="136" y="9" width="116" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="136" y="37.0" width="116" height="44" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="136" y="9" width="116" height="72" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="136" y1="37" x2="252" y2="37" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="152" y="29.3" fill="#000000" font-family="Arial Black" font-size="13">ADJECTIVE</text>
+	<text x="144" y="53.2" fill="#000000" font-family="Arial" font-size="14">code_adjective</text>
+	<line x1="144" y1="56" x2="243" y2="56" stroke="#000000" stroke-width="1.2"/>
+	<text x="144" y="71.2" fill="#000000" font-family="Arial" font-size="14">text</text>
+</g>
+
+<!-- Entity VERB -->
+<g id="entity-VERB">
+	<g id="frame-VERB">
+		<rect x="293" y="9" width="86" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="293" y="37.0" width="86" height="44" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="293" y="9" width="86" height="72" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="293" y1="37" x2="379" y2="37" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="315" y="29.3" fill="#000000" font-family="Arial Black" font-size="13">VERB</text>
+	<text x="301" y="53.2" fill="#000000" font-family="Arial" font-size="14">code_verb</text>
+	<line x1="301" y1="56" x2="371" y2="56" stroke="#000000" stroke-width="1.2"/>
+	<text x="301" y="71.2" fill="#000000" font-family="Arial" font-size="14">text</text>
+</g>
+
+<!-- Entity CORRECTION -->
+<g id="entity-CORRECTION">
+	<g id="frame-CORRECTION">
+		<rect x="133" y="369" width="122" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="133" y="397.0" width="122" height="62" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="133" y="369" width="122" height="90" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="133" y1="397" x2="255" y2="397" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="145" y="389.3" fill="#000000" font-family="Arial Black" font-size="13">CORRECTION</text>
+	<text x="141" y="413.2" fill="#000000" font-family="Arial" font-size="14">code_correction</text>
+	<line x1="141" y1="416" x2="246" y2="416" stroke="#000000" stroke-width="1.2"/>
+	<text x="141" y="431.2" fill="#000000" font-family="Arial" font-size="14">phrase</text>
+	<text x="141" y="449.2" fill="#000000" font-family="Arial" font-size="14">note</text>
+</g>
+</svg>
