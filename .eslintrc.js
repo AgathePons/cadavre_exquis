@@ -12,6 +12,10 @@ module.exports = {
     ecmaVersion: 13,
   },
   rules: {
+    indent: ['error', 2],
+    'no-console': 'off',
+    'no-restricted-globals': 'off',
+    'max-len': [2, 120, 4],
   },
   overrides: [
     {

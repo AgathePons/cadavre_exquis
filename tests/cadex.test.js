@@ -4,6 +4,7 @@ const {
   cadex
 } = require('../app/services/cadex');
 const data = require('../data/parts.json');
+
 // pour écrire un test, on utilise une fonction fournie par jest :
 // - test(message, function)
 // - it(message, function)
@@ -24,9 +25,8 @@ describe('Random number', () => {
 
   it('should return a whole number', () => {
     const max = 25;
-    const result = randomIndex(max).toString();
     expect(Number.isInteger(randomIndex(max))).toBeTruthy();
-    //expect(randomIndex(max).toString()).not.toMatch(/\d+\.\d*/); // des chiffres . (un point) des chiffres
+    // expect(randomIndex(max).toString()).not.toMatch(/\d+\.\d*/); // des chiffres . (un point) des chiffres
   });
 });
 
@@ -48,8 +48,6 @@ describe('Random element in a list', () => {
   });
   it('should return a string from the selected list', () => {
     const randomVerb = randomInList(data.verbs);
-    //!
-    console.log(randomVerb);
     expect(data.verbs).toContain(randomVerb);
   });
 });
@@ -124,8 +122,6 @@ describe('Generate', () => {
   });
   describe('Glue', () => {
     const phrase = cadexObj.glue();
-    //!
-    console.log(phrase);
     it('should return a string', () => {
         expect(typeof phrase).toBe('string');
     });

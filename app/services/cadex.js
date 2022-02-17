@@ -27,7 +27,7 @@ const cadex = {
         return `${this.name} ${this.adjective} ${this.verb} ${this.complement}.`
       },
     };
-  }
+  },
 };
 
 // on export randomIndex pour pouvoir la require dans le fichier de test

@@ -1,9 +1,15 @@
+const { request } = require('express');
 const {cadex} = require('../services/cadex');
 
 const controller = {
-  getCadex(_req, res) {
+  getCadex(req, res) {
+    //!
+    console.log(req.query);
     const cadexObject = cadex.generate();
-    res.json(cadexObject.glue());
+    const copy = {...cadexObject, ...req.query};
+    //!
+    console.log(copy);
+    return res.json(copy.glue()); // on doit return pour utiliser le résultat dans le test
   },
 };
 
