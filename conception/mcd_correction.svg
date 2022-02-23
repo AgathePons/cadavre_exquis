@@ -1,0 +1,128 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="638" height="254" view_box="0 0 638 254"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Fri, 18 Feb 2022 01:10:44</desc>
+
+<rect id="frame" x="0" y="0" width="638" height="254" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association EST COMPLEMENT DE -->
+<line x1="569" y1="217" x2="387" y2="217" stroke="#bf812d" stroke-width="1.5"/>
+<text x="482" y="234.0" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="265" y1="127" x2="387" y2="217" stroke="#bf812d" stroke-width="1.5"/>
+<text x="296.494184868" y="180" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-EST COMPLEMENT DE">
+	<path d="M 462 189 a 14 14 90 0 1 14 14 V 216 h -178 V 203 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 476 216.0 v 15 a 14 14 90 0 1 -14 14 H 312 a 14 14 90 0 1 -14 -14 V 216.0 H 178" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="298" y="189" width="178" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="298" y1="216" x2="476" y2="216" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="307" y="209.3" fill="#000000" font-family="Arial Black" font-size="13">EST COMPLEMENT DE</text>
+</g>
+
+<!-- Association EST ADJECTIF DE -->
+<line x1="569" y1="37" x2="387" y2="37" stroke="#bf812d" stroke-width="1.5"/>
+<text x="497" y="54.0" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="265" y1="127" x2="387" y2="37" stroke="#bf812d" stroke-width="1.5"/>
+<text x="296.494184868" y="82" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-EST ADJECTIF DE">
+	<path d="M 447 9 a 14 14 90 0 1 14 14 V 36 h -148 V 23 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 461 36.0 v 15 a 14 14 90 0 1 -14 14 H 327 a 14 14 90 0 1 -14 -14 V 36.0 H 148" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="313" y="9" width="148" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="313" y1="36" x2="461" y2="36" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="322" y="29.3" fill="#000000" font-family="Arial Black" font-size="13">EST ADJECTIF DE</text>
+</g>
+
+<!-- Association EST VERBE DE -->
+<line x1="42" y1="217" x2="170" y2="217" stroke="#bf812d" stroke-width="1.5"/>
+<text x="81" y="234.0" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="265" y1="127" x2="170" y2="217" stroke="#bf812d" stroke-width="1.5"/>
+<text x="224.839002827" y="180" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-EST VERBE DE">
+	<path d="M 218 189 a 14 14 90 0 1 14 14 V 216 h -124 V 203 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 232 216.0 v 15 a 14 14 90 0 1 -14 14 H 122 a 14 14 90 0 1 -14 -14 V 216.0 H 124" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="108" y="189" width="124" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="108" y1="216" x2="232" y2="216" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="117" y="209.3" fill="#000000" font-family="Arial Black" font-size="13">EST VERBE DE</text>
+</g>
+
+<!-- Association EST SUJET DE -->
+<line x1="42" y1="37" x2="170" y2="37" stroke="#bf812d" stroke-width="1.5"/>
+<text x="74" y="54.0" fill="#01665e" font-family="Arial" font-size="12">0,N</text>
+<line x1="265" y1="127" x2="170" y2="37" stroke="#bf812d" stroke-width="1.5"/>
+<text x="224.839002827" y="82" fill="#01665e" font-family="Arial" font-size="12">1,1</text>
+<g id="association-EST SUJET DE">
+	<path d="M 218 9 a 14 14 90 0 1 14 14 V 36 h -124 V 23 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 232 36.0 v 15 a 14 14 90 0 1 -14 14 H 122 a 14 14 90 0 1 -14 -14 V 36.0 H 124" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="108" y="9" width="124" height="56" fill="none" rx="14" stroke="#bf812d" stroke-width="3"/>
+	<line x1="108" y1="36" x2="232" y2="36" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="117" y="29.3" fill="#000000" font-family="Arial Black" font-size="13">EST SUJET DE</text>
+</g>
+
+<!-- Entity NOM -->
+<g id="entity-NOM">
+	<g id="frame-NOM">
+		<rect x="16" y="10" width="52" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="16" y="38.0" width="52" height="26" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="16" y="10" width="52" height="54" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="16" y1="38" x2="68" y2="38" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="24" y="30.3" fill="#000000" font-family="Arial Black" font-size="13">NOM</text>
+	<text x="24" y="54.2" fill="#000000" font-family="Arial" font-size="14">label</text>
+	<line x1="24" y1="57" x2="56" y2="57" stroke="#000000" stroke-width="1.2"/>
+</g>
+
+<!-- Entity COMPLEMENT -->
+<g id="entity-COMPLEMENT">
+	<g id="frame-COMPLEMENT">
+		<rect x="509" y="190" width="120" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="509" y="218.0" width="120" height="26" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="509" y="190" width="120" height="54" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="509" y1="218" x2="629" y2="218" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="517" y="210.3" fill="#000000" font-family="Arial Black" font-size="13">COMPLEMENT</text>
+	<text x="517" y="234.2" fill="#000000" font-family="Arial" font-size="14">label</text>
+	<line x1="517" y1="237" x2="549" y2="237" stroke="#000000" stroke-width="1.2"/>
+</g>
+
+<!-- Entity COMBINAISON -->
+<g id="entity-COMBINAISON">
+	<g id="frame-COMBINAISON">
+		<rect x="204" y="91" width="122" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="204" y="119.0" width="122" height="44" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="204" y="91" width="122" height="72" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="204" y1="119" x2="326" y2="119" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="212" y="111.3" fill="#000000" font-family="Arial Black" font-size="13">COMBINAISON</text>
+	<text x="212" y="135.2" fill="#000000" font-family="Arial" font-size="14">correction</text>
+	<line x1="212" y1="138" x2="277" y2="138" stroke="#000000" stroke-width="1.2"/>
+	<text x="212" y="153.2" fill="#000000" font-family="Arial" font-size="14">note</text>
+</g>
+
+<!-- Entity ADJECTIF -->
+<g id="entity-ADJECTIF">
+	<g id="frame-ADJECTIF">
+		<rect x="524" y="10" width="90" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="524" y="38.0" width="90" height="26" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="524" y="10" width="90" height="54" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="524" y1="38" x2="614" y2="38" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="532" y="30.3" fill="#000000" font-family="Arial Black" font-size="13">ADJECTIF</text>
+	<text x="532" y="54.2" fill="#000000" font-family="Arial" font-size="14">label</text>
+	<line x1="532" y1="57" x2="564" y2="57" stroke="#000000" stroke-width="1.2"/>
+</g>
+
+<!-- Entity VERBE -->
+<g id="entity-VERBE">
+	<g id="frame-VERBE">
+		<rect x="9" y="190" width="66" height="28" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="9" y="218.0" width="66" height="26" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="9" y="190" width="66" height="54" fill="none" stroke="#35978f" stroke-width="3"/>
+		<line x1="9" y1="218" x2="75" y2="218" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="17" y="210.3" fill="#000000" font-family="Arial Black" font-size="13">VERBE</text>
+	<text x="17" y="234.2" fill="#000000" font-family="Arial" font-size="14">label</text>
+	<line x1="17" y1="237" x2="49" y2="237" stroke="#000000" stroke-width="1.2"/>
+</g>
+</svg>

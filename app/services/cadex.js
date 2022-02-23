@@ -1,5 +1,10 @@
 const data = require('../../data/parts.json');
 
+/**
+ * return an integer between 0 and mx
+ * @param {number} max number of elements in the table
+ * @returns {number} random index for random element of the table
+ */
 const randomIndex = (max) => Math.floor(Math.random() * max);
 
 const randomInList = (list) => list[randomIndex(list.length)];
