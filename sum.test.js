@@ -1,4 +1,4 @@
-const { sum, string, myObject } = require('../testJest');
+const { sum, string, myObject } = require('./sum');
 
 describe('i test JEST', () => {
   it('shoulb be 3', () => {

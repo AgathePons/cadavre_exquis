@@ -19,6 +19,7 @@ const cadex = {
     const nounsArray = await data.getAllNouns();
     const randomNoun = randomInList(nounsArray);
     console.log('noun :', randomNoun);
+    return randomNoun;
   },
 };
 
