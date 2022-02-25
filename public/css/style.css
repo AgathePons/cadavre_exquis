@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Doctor Satan';
+    src: url('../fonts/DoctorSatan.ttf');
+}
+
+header {
+    text-align: center;
+    height: 120px;
+    padding: 20px;
+    background: linear-gradient(#526e55 0%, #979d45 100%);
+}
+
+.cadavre {
+    font-family: 'Doctor Satan';
+    font-size: 5em;
+    color: #320e06;
+    text-shadow: 3px 3px 5px white;
+}
+
+.exquis {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2em;
+    color: #daf7a6;
+    text-shadow: 1px 1px 3px white;
+}
+
+main {
+    position: relative;
+    background: radial-gradient( #8ba393, #82534d);
+    height: calc(100vh - 120px);
+    box-shadow: 0 5px 5px black inset;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: #979d4533;
+    color: #3D4335;
+    text-shadow: 1px 1px 3px white;
+    border: 3px solid #3D4335;
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+
+.button:hover {
+    color: white;
+    text-shadow: 1px 1px 3px #3D4335;
+    cursor: pointer;
+}
+
+#again {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.word {
+    padding: 5px 5px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #3D4335;
+    text-shadow: 1px 1px 3px white;
+    animation: bump 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes bump {
+    0% {
+        opacity: 0;
+        transform: perspective(300px) translateZ(-200px);
+    }
+
+    10% {
+        transform: perspective(300px) translateZ(-200px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: perspective(300px) translateZ(50px);
+    }
+
+    100% {
+        transform: perspective(300px) translateZ(0px);
+        opacity: 1;
+    }
+}
+
+.formOpen {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+ }
+
+form {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #979d4533;
+    color: #3D4335;
+    border: 3px solid #3D4335;
+    padding: 0.3em 0.5em;
+
+}
+
+.formClose {
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+ }
+
+ form div {
+    padding: 0.3em;
+}
+
+form div:last-child {
+    text-align: right;
+}
+
+
+form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+form input {
+    text-align: center;
+    width: 100px;
+}
