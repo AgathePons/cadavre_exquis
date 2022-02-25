@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=testUnitaire_errorDebug_validatorSchema
+%uri=git@github.com:AgathePons/testUnitaire_errorDebug_validatorSchema.git
+
+init_db 2022-02-25T08:52:30Z AgathePons <student@teleporter> # init the db by creating tables
