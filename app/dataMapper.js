@@ -4,18 +4,36 @@ const dataMapper = {
   async getAllNouns() {
     try {
       const query = 'SELECT label FROM noun;';
-      return (await client.query(query)).rows;
+      const data = (await client.query(query)).rows;
+      if (!data) {
+        const errorMsg = 'No data found';
+        return errorMsg;
+      }
+      return data;
     } catch (err) {
-      console.error('Error:', err);
+      console.error('getAllNouns error:', err);
+      const catchErrorMsg = 'Error catched in console';
+      return catchErrorMsg;
     }
   },
   async getOneNoun(index) {
     try {
       const query = `SELECT * FROM noun WHERE noun.id=${index}`;
-      return (await client.query(query)).rows[0];
+      const data = await client.query(query).rows[0];
+      if (!data) {
+        const errorMsg = 'No data found';
+        return errorMsg;
+      }
+      return data;
     } catch (err) {
-      console.error('Error:', err);
+      console.error('getOneNoun error:', err);
+      const catchErrorMsg = 'Error catched in console';
+      return catchErrorMsg;
     }
+  },
+  // end dbConnect
+  closeDb() {
+    client.end();
   },
 };
 

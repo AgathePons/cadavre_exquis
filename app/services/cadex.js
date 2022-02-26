@@ -1,3 +1,4 @@
+const dataMapper = require('../dataMapper');
 const data = require('../dataMapper');
 
 /**
@@ -16,11 +17,25 @@ const randomInList = (listArray) => listArray[randomIndex(randomIndex(listArray.
 
 const cadex = {
   async randomNoun() {
-    const nounsArray = await data.getAllNouns();
-    const randomNoun = randomInList(nounsArray);
-    console.log('noun :', randomNoun);
-    return randomNoun;
+    try {
+      const nounsArray = await data.getAllNouns();
+      const randomNoun = randomInList(nounsArray);
+      console.log('noun :', randomNoun);
+      return randomNoun;
+    } catch (err) {
+      console.error('randomNoun error:', err);
+      const catchErrorMsg = 'Error catched in console';
+      return catchErrorMsg;
+    }
+  },
+  // end dbConnect
+  closeDbClient() {
+    dataMapper.closeDb();
   },
 };
 
-module.exports = { cadex, randomIndex, randomInList };
+module.exports = {
+  cadex,
+  randomIndex,
+  randomInList,
+};

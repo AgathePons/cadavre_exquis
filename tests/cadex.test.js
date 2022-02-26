@@ -1,6 +1,4 @@
 /* eslint-disable jest/prefer-expect-assertions */
-const client = require('../app/dbClient');
-// const { Client } = require('pg');
 const { randomIndex, cadex } = require('../app/services/cadex');
 
 describe('random number', () => {
@@ -22,16 +20,9 @@ describe('random number', () => {
 });
 
 describe('random words from cadex method', () => {
-  /* let client;
-
-  beforeAll(() => {
-    client = new Client(process.env.PGURL);
-    client.connect();
-  }); */
-
   afterAll(() => {
     // Closing the DB connection allows Jest to exit successfully.
-    client.end();
+    cadex.closeDbClient();
   });
 
   it('get random noun from db', async () => {
@@ -39,12 +30,25 @@ describe('random words from cadex method', () => {
     expect(typeof data).toBe('string');
   });
 
-  it('get an error if async/await fails', async () => {
+  // test thrown error in catch
+  /* class NoErrorThrownError extends Error {}
+  const getError = async <TError>(call: () => unknown): Promise<TError> => {
+    try {
+      await call();
+
+      throw new NoErrorThrownError();
+    } catch (error: unknown) {
+      return error as TError;
+    }
+  }; */
+  it('get aa catch error if async/await fails', async () => {
+    // TODO see how check without calling expect() conditionnaly
+    // await expect(cadex.randomNoun()).rejects.toThrow(TypeError);
     try {
       await cadex.randomNoun();
     } catch (e) {
       expect(e).toMatch('error');
     }
-    //expect.assertions(1);
+    // TODO expect.assertions(1); See how it works
   });
 });
