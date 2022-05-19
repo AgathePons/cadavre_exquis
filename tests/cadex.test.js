@@ -1,7 +1,8 @@
+/* eslint-disable no-undef */
 const {
   randomIndex,
   randomInList,
-  cadex
+  cadex,
 } = require('../app/services/cadex');
 const data = require('../data/parts.json');
 
@@ -39,7 +40,7 @@ describe('Data', () => {
     expect(data).toHaveProperty('adjectives');
     expect(data).toHaveProperty('verbs');
     expect(data).toHaveProperty('complements');
-  })
+  });
 });
 
 describe('Random element in a list', () => {
@@ -68,7 +69,7 @@ describe('Random name', () => {
   });
   it('should return a random string from data.names', () => {
     expect(data.names).toContain(name);
-  })
+  });
 });
 
 describe('Random adjective', () => {
@@ -78,7 +79,7 @@ describe('Random adjective', () => {
   });
   it('should return a random string from data.adjectives', () => {
     expect(data.adjectives).toContain(adjective);
-  })
+  });
 });
 
 describe('Random verb', () => {
@@ -88,7 +89,7 @@ describe('Random verb', () => {
   });
   it('should return a random string from data.verbs', () => {
     expect(data.verbs).toContain(verb);
-  })
+  });
 });
 
 describe('Random complement', () => {
@@ -98,7 +99,7 @@ describe('Random complement', () => {
   });
   it('should return a random string from data.complements', () => {
     expect(data.complements).toContain(complement);
-  })
+  });
 });
 
 describe('Generate', () => {
@@ -123,7 +124,7 @@ describe('Generate', () => {
   describe('Glue', () => {
     const phrase = cadexObj.glue();
     it('should return a string', () => {
-        expect(typeof phrase).toBe('string');
+      expect(typeof phrase).toBe('string');
     });
 
     it('should return a string containing all 4 chunks', () => {

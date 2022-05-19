@@ -13,10 +13,11 @@ GET {{host}}/v1/cadex?name=Le%20petit%20dodo&verb=crounche
 
 ### POST /v1/cadex
 POST {{host}}/v1/cadex
-
 Content-Type: application/json
 
 {
     "name": "Nico",
-    "verb": "se bidonne"
+    "verb": "se bidonne",
+    "adjective": "en jupette",
+    "complement": "sous un pont"
 }

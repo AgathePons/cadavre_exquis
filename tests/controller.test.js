@@ -1,4 +1,6 @@
-const {cadex} = require('../app/services/cadex');
+const {
+  cadex
+} = require('../app/services/cadex');
 const controller = require('../app/controllers/controller');
 
 const mockResponse = {
@@ -16,12 +18,12 @@ jest.mock('../app/services/cadex', () => {
   return {
     ...originalModule,
     cadex: {
-        ...originalModule.cadex,
-        generate: jest.fn(() => ({
-            glue: () => 'test',
-        })),
+      ...originalModule.cadex,
+      generate: jest.fn(() => ({
+        glue: () => 'test',
+      })),
     },
-};
+  };
 });
 
 let result;

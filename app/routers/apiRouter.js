@@ -1,8 +1,8 @@
 const { Router } = require('express');
-
-const controller = require('./controllers/controller');
-const validator = require('./middlewares/validator');
-const schemaPost = require('./schemas/cadexPost');
+const controller = require('../controllers/controller');
+const validator = require('../middlewares/validator');
+const schemaPost = require('../schemas/cadexPost');
+const asyncMWWrapper = require('../middlewares/asyncMWWrapper');
 
 const router = Router();
 
@@ -35,6 +35,8 @@ router.get('/cadex', controller.getCadex);
  * @returns {string} 200 - the generated cadex
  * @returns {string} 400 - validation error message
  */
-router.post('/cadex',  controller.postCadex);
-//validator(schemaPost, 'body'), // middleware à checker pour que ça fasse pas d'erreur
+router.post('/cadex', validator(schemaPost, 'body'), controller.postCadex);
+
+router.get('/test', asyncMWWrapper(controller.testCadex));
+
 module.exports = router;
