@@ -31,6 +31,7 @@ const controller = {
   },
 
   async testCadex(_req, _res, next) {
+    debug('Erreur générée pour tester les logs Bunyan');
     next(new ApiError('Erreur fait exprès', 418));
   },
 };

@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=cadex
+
+init_db 2022-05-19T07:30:58Z ,,, <atsohga@DESKTOP-FF299UQ> # initialisation de la db
