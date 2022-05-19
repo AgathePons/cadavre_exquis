@@ -16,7 +16,7 @@ const router = Router();
  * @param {string} complement.query custom name of the cadex
  * @returns {string} 200 - the generated cadex
  */
-router.get('/cadex', controller.getCadex);
+router.get('/cadex', asyncMWWrapper(controller.getCadex));
 
 /**
  * Expected object with custom chunks of phrase

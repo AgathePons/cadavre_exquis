@@ -9,9 +9,9 @@ const controller = {
    * @param {Response} res
    * @returns {string} 200 The full or partial random cadex
    */
-  getCadex(req, res) {
+  async getCadex(req, res) {
     debug('Execution de getCadex avec en query string:', req.query);
-    const cadexObject = cadex.generate();
+    const cadexObject = await cadex.generate();
     const copy = { ...cadexObject, ...req.query };
     return res.json(copy.glue()); // on doit return pour utiliser le résultat dans le test
   },
@@ -21,9 +21,9 @@ const controller = {
    * @param {Response} res
    * @returns {string} 200 The partial random cadex
    */
-  postCadex(req, res) {
+  async postCadex(req, res) {
     debug('Execution de getCadex avec en body string:', req.body);
-    const cadexObject = cadex.generate();
+    const cadexObject = await cadex.generate();
     debug('Cadex généré', cadexObject);
     cadex.add(req.body);
     const copy = { ...cadexObject, ...req.body };

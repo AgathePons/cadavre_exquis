@@ -1,5 +1,5 @@
 const debug = require('debug')('Cadex');
-const data = require('../../data/parts.json');
+const data = require('../dataMapper');
 const ApiError = require('../errors/apiError');
 
 /**
@@ -21,41 +21,53 @@ const cadex = {
    * returns a random name from data source
    * @returns {string} a random name
    */
-  randomName() {
-    return randomInList(data.names);
+  async randomName() {
+    const nounsArray = await data.getAllNouns();
+    const randomNoun = randomInList(nounsArray).label;
+    debug('noun :', randomNoun);
+    return randomNoun;
   },
   /**
    * returns a random adjective from data source
    * @returns {string} a random adjective
    */
-  randomAdjective() {
-    return randomInList(data.adjectives);
+  async randomAdjective() {
+    const adjectivesArray = await data.getAllAdjectives();
+    const randomAdjective = randomInList(adjectivesArray).label;
+    debug('adjective : ', randomAdjective);
+    return randomAdjective;
   },
   /**
    * returns a random verb from data source
    * @returns {string} a random verb
    */
-  randomVerb() {
-    return randomInList(data.verbs);
+  async randomVerb() {
+    const verbsArray = await data.getAllVerbs();
+    const randomVerb = randomInList(verbsArray).label;
+    debug('verb : ', randomVerb);
+    return randomVerb;
   },
   /**
    * returns a random complement from data source
    * @returns {string} a random complement
    */
-  randomComplement() {
-    return randomInList(data.complements);
+  async randomComplement() {
+    const complementsArray = await data.getAllComplements();
+    const randomComplement = randomInList(complementsArray).label;
+    debug('complement : ', randomComplement);
+    return randomComplement;
   },
   /**
    * generate the for words and give a method to glue them
    * @returns an object containing the 4 words of the cadex, and a method glue() which glues the words in a string
    */
-  generate() {
+  async generate() {
     debug('Génération du cadex');
     return {
-      name: this.randomName(),
-      adjective: this.randomAdjective(),
-      verb: this.randomVerb(),
-      complement: this.randomComplement(),
+      name: await this.randomName(),
+      adjective: await this.randomAdjective(),
+      verb: await this.randomVerb(),
+      complement: await this.randomComplement(),
       /**
        * glue the chunks to create a string
        * @returns {string} cadex phrase

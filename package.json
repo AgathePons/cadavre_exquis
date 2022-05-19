@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "DEBUG=Cadex,Controller,ErrorHandler node-dev index.js --no-notify",
+    "dev": "DEBUG=Cadex,Controller,ErrorHandler,DataMapper node-dev index.js --no-notify",
     "test": "jest"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "express": "^4.17.2",
     "express-jsdoc-swagger": "^1.6.7",
     "joi": "^17.6.0",
+    "pg": "^8.7.3",
     "supertest": "^6.2.2"
   }
 }
