@@ -44,6 +44,8 @@ Installer les dépendances
 npm i
 ```
 
+Créer le fichier `.env` en se servant du `.env.example`.
+
 ### La base de données
 
 Créer une base de donnée (en super user)
@@ -54,11 +56,8 @@ createdb ma_db
 
 Installer **[sqitch](https://sqitch.org/download/)**.
 
-Initier Sqitch sur le projet
+Créer le fichier `sqitch.conf` en se servant du `sqitch.conf.example`.
 
-```cmd
-sqitch init nom_projet --engine pg --target db:pg:ma_bdd --top-dir migrations
-```
 
 Deployer la base de données
 
@@ -104,4 +103,12 @@ Jouer les tests
 
 ```cmd
 npm test
+```
+
+## Note Sqitch
+
+Initier le Sqitch
+
+```cmd
+sqitch init nom_projet --engine pg --target db:pg:ma_bdd --top-dir migrations
 ```
