@@ -4,7 +4,7 @@
 
 ## Projet
 
-En s'inspirant du **cadavre excquis**, ce projet propose de piocher sujet, adjectif, verbe et complément dans une base de donnée, pour construire des phrases originales.
+En s'inspirant du **cadavre exquis**, ce projet propose de piocher sujet, adjectif, verbe et complément dans une base de donnée, pour construire des phrases originales.
 
 Un formulaire permet de rentrer une ou plusieurs valeurs. Si ces valeurs proposées par l'utilisateur sont nouvelles, elles sont ajoutées à la base de données pour compléter la collection de mots possibles.
 
