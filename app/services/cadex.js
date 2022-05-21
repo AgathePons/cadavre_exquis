@@ -10,8 +10,8 @@ const ApiError = require('../errors/apiError');
 const randomIndex = (max) => Math.floor(Math.random() * max);
 
 /**
- * return a string : a word from an array of words (noun, adjective, verb or complement)
- * @param {string[]} list array which contains the list of words (can be noun, adjective, verb or complement)
+ * return a string : a word from an array of words (name, adjective, verb or complement)
+ * @param {string[]} list array which contains the list of words (can be name, adjective, verb or complement)
  * @returns {string} the index value of the array (index which is a random number from randomIndex)
  */
 const randomInList = (list) => list[randomIndex(list.length)];
@@ -22,10 +22,10 @@ const cadex = {
    * @returns {string} a random name
    */
   async randomName() {
-    const nounsArray = await data.getAllNouns();
-    const randomNoun = randomInList(nounsArray).label;
-    debug('noun :', randomNoun);
-    return randomNoun;
+    const namesArray = await data.getAllNames();
+    const randomName = randomInList(namesArray).label;
+    debug('name :', randomName);
+    return randomName;
   },
   /**
    * returns a random adjective from data source
@@ -81,18 +81,18 @@ const cadex = {
    * Adds user provided chunks to the data source
    * @param {object} update User inputs to add to data source
    */
-  add(update) {
-    debug('Ajout de nouvelles data dans la source');
+  async add(update) {
+    debug('Check data du formulaire dans bdd:', update);
     if (update.name === 'error') {
       throw new ApiError('Erreur de test', 404);
     }
-    Object.keys(update).forEach((propName) => {
-      // check si la clé rentrée au singulier correspond à une clé de data au pluriel
-      if (data[`${propName}s`]) {
-        // check si la valeur n'est pas déjà présente
-        if (!data[`${propName}s`].includes[propName]) {
-          data[`${propName}s`].push(update[propName]);
-        }
+    Object.keys(update).forEach(async (propName) => {
+      // check si la valeur rentrée existe déjà en bdd
+      debug(`prop: ${propName}, value: ${update[propName]}`);
+      const newValue = await data.getOneValue(propName, update[propName]);
+      if (!newValue) {
+        debug(`new value to insert: ${propName} = ${update[propName]}`);
+        await data.insertOneValue(propName, update[propName]);
       }
     });
   },

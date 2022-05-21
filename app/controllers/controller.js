@@ -25,6 +25,7 @@ const controller = {
     debug('Execution de getCadex avec en body string:', req.body);
     const cadexObject = await cadex.generate();
     debug('Cadex généré', cadexObject);
+    debug('req.body', req.body);
     cadex.add(req.body);
     const copy = { ...cadexObject, ...req.body };
     return res.json(copy.glue());

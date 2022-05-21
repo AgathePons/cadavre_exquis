@@ -1,6 +1,6 @@
 BEGIN;
 INSERT INTO
-  noun (label)
+  name (label)
 VALUES
   ('un cheval'),
   ('la mairie de Neuilly-sur-Seine'),

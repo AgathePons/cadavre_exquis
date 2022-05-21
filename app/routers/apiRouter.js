@@ -35,7 +35,7 @@ router.get('/cadex', asyncMWWrapper(controller.getCadex));
  * @returns {string} 200 - the generated cadex
  * @returns {string} 400 - validation error message
  */
-router.post('/cadex', validator(schemaPost, 'body'), controller.postCadex);
+router.post('/cadex', validator(schemaPost, 'body'), asyncMWWrapper(controller.postCadex));
 
 router.get('/test', asyncMWWrapper(controller.testCadex));
 

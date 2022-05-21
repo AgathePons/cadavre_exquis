@@ -2,3 +2,4 @@
 %project=cadex
 
 init_db 2022-05-19T07:30:58Z ,,, <atsohga@DESKTOP-FF299UQ> # initialisation de la db
+rename_table_name 2022-05-21T09:00:37Z ,,, <atsohga@DESKTOP-FF299UQ> # rename table noun in name

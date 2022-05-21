@@ -2,21 +2,10 @@ const debug = require('debug')('DataMapper');
 const client = require('./dbClient');
 
 const dataMapper = {
-  async getAllNouns() {
-    debug('getAllNouns called');
-    console.log('datamapper');
-    const query = 'SELECT label FROM noun;';
+  async getAllNames() {
+    debug('getAllNames called');
+    const query = 'SELECT label FROM name;';
     const data = (await client.query(query)).rows;
-    if (!data) {
-      const errorMsg = 'No data found';
-      return errorMsg;
-    }
-    return data;
-  },
-  async getOneNoun(index) {
-    debug('getOneNoun called');
-    const query = `SELECT * FROM noun WHERE noun.id=${index}`;
-    const data = await client.query(query).rows[0];
     if (!data) {
       const errorMsg = 'No data found';
       return errorMsg;
@@ -52,6 +41,23 @@ const dataMapper = {
       return errorMsg;
     }
     return data;
+  },
+  async getOneValue(propName, value) {
+    debug(`getOneValue called for prop: ${propName}, label: ${value}`);
+    const query = {
+      text: `SELECT * FROM ${propName} WHERE label=$1`,
+      values: [value],
+    };
+    const data = (await client.query(query)).rows[0];
+    return data;
+  },
+  async insertOneValue(propName, value) {
+    debug(`insert new value: ${propName}: ${value}`);
+    const query = {
+      text: `INSERT INTO ${propName} (label) VALUES ($1)`,
+      values: [value],
+    };
+    await client.query(query);
   },
   // end dbConnect
   closeDb() {
