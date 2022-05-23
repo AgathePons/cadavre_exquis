@@ -136,3 +136,34 @@ form input {
     text-align: center;
     width: 100px;
 }
+
+@media screen and (max-width: 750px) {
+  header {
+    height: auto;
+  }
+  header .cadavre {
+    display: inline-block;
+    margin-left: -55px;
+    margin-bottom: -15px;
+  }
+  header .exquis {
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: 65px;
+    transform: rotate(-10deg);
+  }
+  main .form {
+    position: absolute;
+    top: 65px;
+    left: auto;
+    width: calc(100% - 40px);
+  }
+  main .form .form-bloc {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .form .form-bloc input {
+    width: calc(100% - 100px);
+  }
+}
